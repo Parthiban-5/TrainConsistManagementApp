@@ -62,3 +62,32 @@ public class TrainConsistApp {
         System.out.println("\n=== Program Continues... ===");
     }
 }
+import java.util.HashSet;
+
+public class TrainConsistUC3 {
+
+    public static void main(String[] args) {
+
+        // Step 1: Create HashSet for bogie IDs
+        HashSet<String> bogieIds = new HashSet<>();
+
+        System.out.println("=== Train Consist Management System (UC3) ===");
+
+        // Step 2: Add bogie IDs (including duplicates)
+        System.out.println("\nAdding Bogie IDs...");
+        bogieIds.add("BG101");
+        bogieIds.add("BG102");
+        bogieIds.add("BG103");
+        bogieIds.add("BG101"); // Duplicate
+        bogieIds.add("BG102"); // Duplicate
+
+        // Step 3: Display bogie IDs
+        System.out.println("\nUnique Bogie IDs in Train:");
+        System.out.println(bogieIds);
+
+        // Step 4: Show total unique count
+        System.out.println("\nTotal Unique Bogies: " + bogieIds.size());
+
+        System.out.println("\n=== Program Continues... ===");
+    }
+}
